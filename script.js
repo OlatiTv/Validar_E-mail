@@ -6,10 +6,8 @@ let textEmail = document.getElementById('textEmail')
 form.addEventListener('submit', e => {
   if (validatorEmail(email.value) === true) {
     console.log(email.value)
-    textForm.textContent = ''
     textEmail.textContent = ''
     textForm.textContent = 'requisição atendida'
-    email.focus()
   }
 
   e.preventDefault()
